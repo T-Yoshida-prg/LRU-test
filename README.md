@@ -32,9 +32,10 @@ cache.get("b") →　Null<br>
 
 
 ## プログラムファイルの説明
-Appjava・・・・ほぼ触れていません。<br>
+### Appjava
+ほぼ触れていません。<br>
 
-AppTest.java<br>
+### AppTest.java
 前準備(全テスト共通)<br>
 cache.put("a", "dataA");<br>
 cache.put("b", "dataB");<br>
@@ -53,7 +54,7 @@ cache.get("a") → dataA<br>
 cache.put("c", "dataC");<br>
 cache.get("b") →　Null<br>
 
-LruCashMap.java<br>
+### LruCashMap.java
 maxsize(今回は2つに設定)よりデータが送られたら、<br>
 古いデータを削除<br>
 getすれば使われたとみなし、新しいデータとして認識。<br>
