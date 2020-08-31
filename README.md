@@ -17,46 +17,46 @@ Vscode上でAppTest.javaファイル上のRun testというところを押せば
 
 ## テストの例
 ### (1)
-cache.put("a", "dataA");
-cache.put("b", "dataB");
-cache.put("c", "dataC");
-cache.get("a") →　Null
+cache.put("a", "dataA");<br>
+cache.put("b", "dataB");<br>
+cache.put("c", "dataC");<br>
+cache.get("a") →　Null<br>
 
 ### (2)
-cache.put("a", "dataA");
-cache.put("b", "dataB");
-cache.get("a") → dataA
+cache.put("a", "dataA");<br>
+cache.put("b", "dataB");<br>
+cache.get("a") → dataA<br>
 ### (3)※2の続き
-cache.put("c", "dataC");
-cache.get("b") →　Null
+cache.put("c", "dataC");<br>
+cache.get("b") →　Null<br>
 
 
 ## プログラムファイルの説明
-Appjava・・・・ほぼ触れていません。
+Appjava・・・・ほぼ触れていません。<br>
 
-AppTest.java
-前準備(全テスト共通)
-cache.put("a", "dataA");
-cache.put("b", "dataB");
+AppTest.java<br>
+前準備(全テスト共通)<br>
+cache.put("a", "dataA");<br>
+cache.put("b", "dataB");<br>
 
-(1)_detaset1
-cache.put("c", "dataC");
-cache.get("a") →　Null
-の確認
+(1)_detaset1<br>
+cache.put("c", "dataC");<br>
+cache.get("a") →　Null<br>
+の確認<br>
 
-(2)_detaset2_1
-cache.get("a") → dataA
-の確認
+(2)_detaset2_1<br>
+cache.get("a") → dataA<br>
+の確認<br>
 
-(3)_detaset2_2
-cache.get("a") → dataA
-cache.put("c", "dataC");
-cache.get("b") →　Null
+(3)_detaset2_2<br>
+cache.get("a") → dataA<br>
+cache.put("c", "dataC");<br>
+cache.get("b") →　Null<br>
 
-LruCashMap.java
-maxsize(今回は2つに設定)よりデータが送られたら、
-古いデータを削除
-getすれば使われたとみなし、新しいデータとして認識。
+LruCashMap.java<br>
+maxsize(今回は2つに設定)よりデータが送られたら、<br>
+古いデータを削除<br>
+getすれば使われたとみなし、新しいデータとして認識。<br>
 
 
 
