@@ -1,37 +1,37 @@
 # LRU-test(テスト駆動開発,LRUCashe）
 kadai1のファイルが完成されたプログラムです。使うときはそれを使ってください。
 
-#開発環境
+## 開発環境
 vscode
 
 
-#使用言語
+## 使用言語
 Java(maven)
 
-#開発期間
+## 開発期間
 4日
 
 
-#実行方法
+## 実行方法
 Vscode上でAppTest.javaファイル上のRun testというところを押せば、実行。
 
-#テストの例
-(1)
+## テストの例
+### (1)
 cache.put("a", "dataA");
 cache.put("b", "dataB");
 cache.put("c", "dataC");
 cache.get("a") →　Null
 
-(2)
+### (2)
 cache.put("a", "dataA");
 cache.put("b", "dataB");
 cache.get("a") → dataA
-(3)※2の続き
+### (3)※2の続き
 cache.put("c", "dataC");
 cache.get("b") →　Null
 
 
-#プログラムファイルの説明
+## プログラムファイルの説明
 Appjava・・・・ほぼ触れていません。
 
 AppTest.java
