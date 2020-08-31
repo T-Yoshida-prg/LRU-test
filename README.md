@@ -1,5 +1,5 @@
 # LRU-test(テスト駆動開発,LRUCashe）
-branchのkadai1のファイルが完成されたプログラムです。使うときはそれを使ってください。
+branchのfinalにあるkadai1のファイルが完成されたプログラムです。使うときはそれを使ってください。
 
 ## 開発環境
 vscode
